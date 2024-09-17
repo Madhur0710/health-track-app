@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "cc11ba34-9de6-403d-999b-c01f8d07959e",
+		"name": "Health Trackinng App API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33808837"
+	},
+	"item": [
+		{
+			"name": "Create Health Record",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"date\": \"2024-09-03\",\r\n  \"bodyTemperature\": 37.5,\r\n  \"bloodPressure\": \"130/70\",\r\n  \"heartRate\": 95\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/health-records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"health-records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Records",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"date\": \"2024-09-03\",\r\n  \"bodyTemperature\": 37.5,\r\n  \"bloodPressure\": \"130/70\",\r\n  \"heartRate\": 95\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/health-records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"health-records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Specific Record by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"date\": \"2024-09-03\",\r\n  \"bodyTemperature\": 37.5,\r\n  \"bloodPressure\": \"130/70\",\r\n  \"heartRate\": 95\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/health-records/66e97368c947281217a1be24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"health-records",
+						"66e97368c947281217a1be24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Record by id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"bodyTemperature\": 37.2,\r\n  \"bloodPressure\": \"130/85\",\r\n  \"heartRate\": 75\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/health-records/66e97368c947281217a1be24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"health-records",
+						"66e97368c947281217a1be24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a specific record by id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/health-records/66e97368c947281217a1be24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"health-records",
+						"66e97368c947281217a1be24"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
