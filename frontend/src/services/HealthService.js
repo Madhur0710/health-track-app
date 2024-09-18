@@ -6,6 +6,10 @@ export const getAllHealthRecords = async () => {
   return await axios.get(API_URL);
 };
 
+export const getHealthRecordById = async (id) => {
+  return await axios.get(`${API_URL}/${id}`);
+};
+
 export const addHealthRecord = async (data) => {
   return await axios.post(API_URL, data);
 };
