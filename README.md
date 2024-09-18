@@ -15,7 +15,7 @@ This repository contains the backend code for the Health Tracking App. It is bui
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/health-track-app.git
+   git clone https://github.com/Madhur0710/health-track-app.git
    cd health-track-app
 
 **Install Dependencies**
