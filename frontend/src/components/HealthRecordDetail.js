@@ -25,7 +25,7 @@ const HealthRecordDetail = () => {
   }
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 text-center">
       <h1 className="text-3xl font-bold mb-6">Record Details</h1>
       <p><strong>Date:</strong> {new Date(record.date).toLocaleDateString()}</p>
       <p><strong>Body Temperature:</strong> {record.bodyTemperature}°C</p>
