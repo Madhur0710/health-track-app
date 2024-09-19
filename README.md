@@ -24,7 +24,10 @@ npm install
 
 **Configure Environment Variables**
 
-MONGO_URI=mongodb+srv://sharmamadhurkant21:zvyOgbQFR4aIFMy1@cluster0.5137m.mongodb.net/health-tracker?retryWrites=true&w=majority&appName=Cluster0
+MONGO_URI=<your-mongodb-uri>
+
+Replace <your-mongodb-uri> with your MongoDB connection string (e.g., MongoDB Atlas URI).
+
 PORT=5000
 
 **Run the Application**
